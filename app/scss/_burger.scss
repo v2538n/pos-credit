@@ -1,0 +1,49 @@
+/* --------- burger --------- */
+
+.burger {
+	display: none;
+	position: relative;
+	width: 30px;
+	height: 20px;
+	z-index: 3;
+	cursor: pointer;
+	align-self: center;
+
+	span {
+		width: 100%;
+		height: 2px;
+		position: absolute;
+		top: 9px;
+		left: 0;
+		background-color: #fff;
+	}
+
+	&:before,
+	&:after {
+		width: 100%;
+		height: 2px;
+		position: absolute;
+		left: 0;
+		background-color: #fff;
+		transition: .3s;
+		content: '';
+	}
+
+	&:before { top: 0; }
+	&:after { bottom: 0; }
+
+	&.active:before {
+		transform: rotate(45deg);
+		top: 9px;
+	}
+
+	&.active:after {
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+
+	&.active span {
+		display: none;
+	}
+
+} // burger

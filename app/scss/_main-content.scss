@@ -1,0 +1,39 @@
+/* --------- main-content --------- */
+
+.main-content {
+	padding: 20px;
+	background: #222;
+	flex-grow: 1;
+	color: #fff;
+	text-shadow: 1px 1px #111;
+}
+
+.cards {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	&__item {
+		width: 24%;
+		height: 200px;
+		background: #2e5073;
+		margin-bottom: 20px;
+		transition: background .5s ease 0s;
+
+		&:hover {
+			background: #3d6894;
+		}
+
+		@media screen and (max-width: 990px) {
+			width: 32%;
+		}
+
+		@media screen and (max-width: 767px) {
+			width: 49%;
+		}
+
+		@media screen and (max-width: 576px) {
+			width: 98%;
+		}
+	}
+}

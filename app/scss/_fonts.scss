@@ -1,0 +1,15 @@
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		// font-display: swap // Uncomment to initially display system fonts
+		src: local($fname), url($furl) format('woff2');
+	}
+}
+
+@include font('MuseoSC', normal, 500, '../fonts/MuseoSansCyrl-500.woff2');
+@include font('MuseoSCb', normal, 700, '../fonts/MuseoSansCyrl-700.woff2');
+
+@include font('PTS', normal, 400, '../fonts/pt-sans-v12-latin_cyrillic-regular.woff2');
+@include font('PTSb', normal, 700, '../fonts/pt-sans-v12-latin_cyrillic-700.woff2');

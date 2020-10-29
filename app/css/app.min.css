@@ -348,7 +348,7 @@ a {
         -ms-flex: 1;
             flex: 1; }
     .menu__list {
-      position: fixed;
+      position: absolute;
       top: 0;
       left: -110vw;
       width: 100%;
@@ -419,7 +419,9 @@ a {
     padding: 10px 15px;
     height: 180px; }
   .menu__list {
-    margin-top: 200px; }
+    margin-top: 60px;
+    padding-top: 20px;
+    z-index: 2 !important; }
   .profit {
     height: 60px;
     padding: 17px 10px; }

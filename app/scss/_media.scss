@@ -13,7 +13,7 @@
 		flex: 1;
 
 		&__list {
-			position: fixed;
+			position: absolute;
 			top: 0;
 			left: -110vw;
 			width: 100%;
@@ -89,7 +89,9 @@
 
 	.menu {
 		&__list {
-			margin-top: 200px;
+			margin-top: 60px;
+		    padding-top: 20px;
+		    z-index: 2!important;
 		}
 	}
 

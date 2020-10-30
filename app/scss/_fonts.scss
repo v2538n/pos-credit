@@ -1,4 +1,4 @@
-@mixin font($fname, $fstyle, $fweight, $furl) {
+/*@mixin font($fname, $fstyle, $fweight, $furl) {
 	@font-face {
 		font-family: $fname;
 		font-style: $fstyle;
@@ -9,7 +9,14 @@
 }
 
 @include font('MuseoSC', normal, 500, '../fonts/MuseoSansCyrl-500.woff2');
-@include font('MuseoSCb', normal, 700, '../fonts/MuseoSansCyrl-700.woff2');
+@include font('PTSb', normal, 700, '../fonts/pt-sans-v12-latin_cyrillic-700.woff2');*/
 
-@include font('PTS', normal, 400, '../fonts/pt-sans-v12-latin_cyrillic-regular.woff2');
-@include font('PTSb', normal, 700, '../fonts/pt-sans-v12-latin_cyrillic-700.woff2');
+@font-face {
+	font-family: 'MuseoSC';
+	src: url('../fonts/museo/museosanscyrl-500.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/museo/museosanscyrl-500.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/museo/museosanscyrl-500.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/museo/museosanscyrl-500.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/museo/museosanscyrl-500.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/museo/museosanscyrl-500.svg#museosanscyrl-500') format('svg'); /* Chrome < 4, Legacy iOS */
+}
